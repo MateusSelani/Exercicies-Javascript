@@ -8,3 +8,8 @@ function limparCamposSubtracao() {
     document.getElementById('subtracaoSegundoCampo').value = '';
     document.getElementById('subtracaoResultado').value = '';
 }
+function limparCamposMultiplicacao() {
+    document.getElementById('multiplicacaoPrimeiroCampo').value = '';
+    document.getElementById('multiplicacaoSegundoCampo').value = '';
+    document.getElementById('multiplicacaoResultado').value = '';
+}
