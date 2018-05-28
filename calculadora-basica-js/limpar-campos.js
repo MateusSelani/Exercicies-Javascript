@@ -13,3 +13,8 @@ function limparCamposMultiplicacao() {
     document.getElementById('multiplicacaoSegundoCampo').value = '';
     document.getElementById('multiplicacaoResultado').value = '';
 }
+function limparCamposDivisao() {
+    document.getElementById('divisaoPrimeiroCampo').value = '';
+    document.getElementById('divisaoSegundoCampo').value = '';
+    document.getElementById('divisaoResultado').value = '';
+}
