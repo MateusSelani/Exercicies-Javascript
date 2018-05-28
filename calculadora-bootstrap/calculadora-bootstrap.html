@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="author" content="Mateus Selani">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>@import url(style.css);</style>
+    <title>Calculadora JS</title>
+</head>
+<body>
+<div class="container jumbotron">
+<h1>Calculadora</h1>
+<br/>
+    <!-- Visor Calculadora -->
+    <div class="form-group">
+        <input class="form-control input-lg" id="visor" type="text">
+    </div>
+    <table class="table table-striped">
+        <tbody>
+        <tr>
+            <!-- Botao Limpar Visor Calculadora -->
+            <td colspan="4"><button class="btn btn-default" 
+                onclick="limparCampo()">Limpar</button></td>
+        </tr>
+        <tr>
+            <!-- Botoes 7, 8, 9 -->
+            <td><button class="btn btn-default" id="valorBotao9" value="9"
+                onclick="adicionarValor9()">9</button></td>
+            <td><button class="btn btn-default" id="valorBotao8" value="8"
+                onclick="adicionarValor8()">8</button></td>
+            <td><button class="btn btn-default" id="valorBotao7" value="7"
+                onclick="adicionarValor7()">7</button></td>
+            <!-- Botao Soma -->
+            <td><button class="btn btn-default" value="Soma">+</button></td>
+        </tr>
+        <tr>
+            <!-- Botoes 4, 5, 6 -->
+            <td><button class="btn btn-default" id="valorBotao6" value="6"
+                onclick="adicionarValor6()">6</button></td>
+            <td><button class="btn btn-default" id="valorBotao5" value="5"
+                onclick="adicionarValor5()">5</button></td>
+            <td><button class="btn btn-default" id="valorBotao4" value="4"
+                onclick="adicionarValor4()">4</button></td>
+            <!-- Botao Subtracao -->
+            <td><button class="btn btn-default" value="Subtracao">-</button></td>
+        </tr>
+        <tr>
+            <!-- Botoes 1, 2, 3 -->
+            <td><button class="btn btn-default" id="valorBotao3" value="3"
+                onclick="adicionarValor3()">3</button></td>
+            <td><button class="btn btn-default" id="valorBotao2" value="2"
+                onclick="adicionarValor2()">2</button></td>
+            <td><button class="btn btn-default" id="valorBotao1" value="1"
+                onclick="adicionarValor1()">1</button></td>
+            <!-- Botao Multiplicacao -->
+            <td><button class="btn btn-default" value="Multiplicacao">*</button></td>
+        </tr>
+        <tr>
+            <!-- botao 0 -->
+            <td colspan="3"><button class="btn btn-default" id="valorBotao0"
+                value="0" onclick="adicionarValor0()">0</button></td>
+            <!-- botao divisao -->
+            <td><button class="btn btn-default" value="Divisao">/</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"><button class="btn btn-default" value="resultado">=</button></td>
+        </tr>
+        </tbody>
+    </table>
+    
+    <script src="captura-valor.js"></script>
+    <script src="limpar-visor.js"></script>
+</div>
+</body>
+</html>
