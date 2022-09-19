@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Faça um programa que receba um valor que é o valor pago, um segundo valor que é o preço do produto e
+    retorne o troco a ser dado. -->
+
+    <form>
+        Valor Pago:<input type="text" id="valorPago">
+        Valor Produto:<input type="text" id="valorProduto">
+        <button type="button" onclick="calculoTroco()">troco</button><br/><br/>
+        Troco<input type="text" id="valorTroco">
+    </form>
+
+    <script>
+        function calculoTroco() {
+            let valorPago = document.getElementById('valorPago').value;
+            let valorProduto = document.getElementById('valorProduto').value;
+            let valorTroco = valorPago - valorProduto;
+
+            document.getElementById('valorTroco').value = valorTroco;
+        }
+    </script>
+</body>
+</html>
